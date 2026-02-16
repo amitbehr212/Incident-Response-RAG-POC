@@ -1,0 +1,34 @@
+# Folder filtering configuration for incident response documents
+
+# Folders to exclude from processing
+excluded_folders:
+  - "Archive"
+  - "Old"
+  - "Deprecated"
+  - "Meeting Notes"
+  - "Templates"
+  - "Drafts"
+
+# Folders to include (if empty, includes all)
+included_folders:
+  - "Runbooks"
+  - "Playbooks"
+  - "Post-Mortems"
+  - "Incident Reports"
+  - "SOPs"
+  - "Policies"
+  - "Documentation"
+
+# File extensions to exclude
+excluded_extensions:
+  - ".zip"
+  - ".tar"
+  - ".gz"
+  - ".exe"
+  - ".dmg"
+
+# Minimum file size (bytes) - skip very small files
+min_file_size: 100
+
+# Maximum file size (bytes) - skip very large files
+max_file_size: 52428800  # 50 MB
